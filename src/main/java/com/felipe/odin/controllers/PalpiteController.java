@@ -39,7 +39,7 @@ public class PalpiteController {
 	}
 	
 	@PostMapping("/checaPalpites")
-	public ResponseEntity<Palpite> checaPalpites() {
+	public ResponseEntity checaPalpites() {
 		service.checaPalpites();
 		return ResponseEntity.accepted().build();
 	}
